@@ -1,0 +1,9 @@
+local.properties
+bin
+gen
+out
+target
+libs
+.idea/workspace.xml
+.idea/tasks.xml
+*.iws
