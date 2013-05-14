@@ -28,6 +28,22 @@
         <groupId>com.jayway.maven.plugins.android.generation2</groupId>
         <artifactId>android-maven-plugin</artifactId>
         <extensions>true</extensions>
+        <executions>
+          <execution>
+            <id>lint</id>
+            <goals>
+              <goal>lint</goal>
+            </goals>
+            <phase>package</phase>
+          </execution>
+        </executions>
+
+        <configuration>
+          <lint>
+            <skip>false</skip>
+            <xmlOutputPath>${project.basedir}/lint-result.xml</xmlOutputPath>
+          </lint>
+        </configuration>
       </plugin>
     </plugins>
   </build>

@@ -55,6 +55,21 @@
         <groupId>com.jayway.maven.plugins.android.generation2</groupId>
         <artifactId>android-maven-plugin</artifactId>
         <extensions>true</extensions>
+        <executions>
+          <execution>
+            <id>uiautomator</id>
+            <goals>
+              <goal>uiautomator</goal>
+            </goals>
+            <phase>package</phase>
+          </execution>
+        </executions>
+
+        <configuration>
+          <uiautomator>
+            <skip>false</skip>
+          </uiautomator>
+        </configuration>
       </plugin>
     </plugins>
   </build>
