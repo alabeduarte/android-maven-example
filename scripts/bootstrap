@@ -1,0 +1,12 @@
+#!/bin/sh
+
+# API level 14 is the minimum for Android 4
+# http://developer.android.com/about/versions/android-4.0.html
+# You need to install the Android SDK and install the package "Android 4.0 (API 14)"
+mvn install:install-file \
+      -Dfile=$ANDROID_HOME/platforms/android-14/android.jar \
+      -DgroupId=com.google.android \
+      -DartifactId=android \
+      -Dversion=14 \
+      -Dpackaging=jar
+
